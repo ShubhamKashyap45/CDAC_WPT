@@ -1,0 +1,17 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    width: 100vw;
+    height: 100vh;
+    font-size: x-large;
+    margin-top: 20px;
+    padding: 20px; /* Added padding */
+    background-image: url("https://th.bing.com/th/id/OIP.gCvQ1vmPVJmrq1nnzM3ZHQHaEo?rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white; /* Added text color for better contrast */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer</title>
+    <style>
+        div {
+            display: block;
+            margin-top: 20%;
+            text-align: center;
+        }
+        img {
+            max-height: 300px; /* Set a max height */
+            max-width: 300px;  /* Set a max width */
+        }
+        input {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img src="https://th.bing.com/th/id/R.0a09df8ffdb1195277590bd5b9f06af6?rik=4zje8w%2bankOyew&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ffootball-png-transparent-image-2000.png&ehk=DYK7B1tP7ihsD54yUb56O%2bGDqrYKxa1tipyeLKLpue4%3d&risl=&pid=ImgRaw&r=0" id="img"> <br>
+        <input type="button" value="Small" id="smbtn">  
+        <input type="button" value="Large" id="lgbtn">  
+   </div>
+
+   <script>
+       let img = document.getElementById("img");
+       let smbtn = document.getElementById("smbtn");
+       let lgbtn = document.getElementById("lgbtn");
+
+       smbtn.addEventListener("click", () => {
+           img.style.width = "10%";
+           img.style.height = "10%";
+       });
+       lgbtn.addEventListener("click", () => {
+           img.style.width = "50%";
+           img.style.height = "50%";
+       });
+   </script>
+</body>
+</html>

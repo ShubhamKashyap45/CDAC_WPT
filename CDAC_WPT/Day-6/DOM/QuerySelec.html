@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <h2 >Hello</h2>
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+         <script>
+            let div1= document.querySelector("#div1")
+            let div2= document.querySelector("#div2")
+
+            div1.innerHTML=`Hello i am <br> div1`;
+            div2.innerHTML=`Hello i am <br> div2`;
+            
+            let h2 = document.querySelector("h2")
+            let name = prompt("Enter your name");
+
+            h2.innerHTML= `hello! ${name}`;
+         </script>
+</body>
+</html>

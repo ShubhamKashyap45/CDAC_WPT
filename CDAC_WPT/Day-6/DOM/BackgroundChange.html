@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div style="text-align: center;">
+        <h1>Dnyanesh</h1>
+
+        <input type="radio" name="color" id="c1" value="red"> <label for="radio">red</label>
+        <input type="radio" name="color" id="c2" value="green"> <label for="radio">green</label>
+        <input type="radio" name="color" id="c3" value="blue" > <label for="radio">blue</label>
+    </div>
+
+    <script>
+        let h1 = document.querySelector("h1");
+      
+        document.querySelector("#c1").onchange = function() {
+            h1.style.color = "red";
+        };
+         
+        document.querySelector("#c2").onchange = function(){
+            h1.style.color = "green"
+        }
+        document.querySelector("#c3").onchange = function(){
+            h1.style.color = "blue"
+        }
+    </script>
+
+       <input type="color" value="color" id="col" > <label >BGcolor</label>
+        
+       <script>
+        document.getElementById("col").onchange= function () {
+            document.body.style.background= col.value;
+        }
+       </script>
+    </body>
+</html>

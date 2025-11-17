@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+    <style>
+        input{
+            display: block;
+        }
+        button{
+            margin-top: 15px;
+        }
+    </style>
+    <script>
+        function Validation(){
+            
+            const user = document.getElementById("user").value
+            const num = document.getElementById("number").value
+            const pwd = document.getElementById("pwd").value
+            const rpwd = document.getElementById("rpwd").value
+
+            if(user=="" || num=="" || pwd=="" || rpwd==""){
+                alert("Please Fill Alll Fields")
+                return false;
+            }else if(num.length<10 || num.length > 10){
+                alert("PHOne Number should be of 10 digits")
+                return false
+            }else if(isNaN(num)){
+                alert("Pls enter number")
+                return false
+            }
+            else if(pwd!=rpwd){
+                alert("Passwords should be same")
+                return false
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return Validation()" action="index2.html" >
+        <label for="text">UserName</label><input type="text" id="user" >
+        <label for="text">Number</label><input type="text" id="number">
+        <label for="text">password</label><input type="text" id="pwd">
+        <label for="text">re type password</label><input type="text" id="rpwd">
+        <!-- <button onclick="Validation()">submit</button> -->
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

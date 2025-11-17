@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Text feild</label> <br> <input type="text" name="text" id="input">
+    <input type="button" value="+" id="btn" onclick="addInputs()">
+    <input type="button" value="-" id="btn2" onclick="removeInputs()">
+    <div id="container"></div>
+
+    <script>
+
+        var count = 0;
+        function addInputs() {
+
+            if (count != 2) {
+                let txt = document.createElement("input")
+                txt.setAttribute('type', 'text');
+                txt.setAttribute('placeholder', 'enter no');
+                let container = document.getElementById("container");
+                container.appendChild(txt);
+                count++;
+                console.log(count);
+                txt.className="removeElement"
+                
+            }
+        }
+       
+        function removeInputs() {
+           
+            let input=document.getElementsByClassName("removeElement")
+            if(input.length>0){
+                input[input.length-1].remove();
+                count--;
+            }
+           
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

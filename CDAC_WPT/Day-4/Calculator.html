@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="margin:  auto; text-align: center;">Calculator</h1>
+    
+
+    <script>
+        function calculator() {
+    const num1 = parseFloat(prompt("Enter the first number:"));
+    const num2 = parseFloat(prompt("Enter the second number:"));
+    const operation = prompt("Enter the operation (+, -, *, /):");
+
+    let result;
+    
+
+    switch (operation) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if (num2 !== 0) {
+                result = num1 / num2;
+            } else {
+                result = "Error: Division by zero";
+            }
+            break;
+        default:
+            result = "Error: Invalid operation";
+    }
+
+    alert(`The result is: ${result}`);
+}
+
+
+calculator();
+
+    </script>
+</body>
+</html>

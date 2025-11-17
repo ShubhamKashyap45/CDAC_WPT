@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let arr = ['dk','pk','sk','rk','ck','vk'];
+        // for (const i in arr) {
+        //       const element = arr[i];
+        //       console.log(element);
+        //     }
+       
+        // for (const element of arr) {
+        //     console.log(element);
+        // }
+       
+        let b = [...arr];
+
+        document.writeln(arr); 
+        document.writeln(b);
+         
+        const x = [1,2,3]
+        const y = [4,5]
+        const z = [6,7]
+       
+        const xyz= [...x,...y,...z];
+
+        document.write(xyz)
+
+        const xy=[101,...x,202,...y,303];
+        document.write(`xy	${xy}<br>`);
+        
+        
+        let arr1 = ['dk','pk','sk','rk','ck','vk'];
+       const [a,d,c]=arr1;  //destructuring
+        document.write(`${a} ${d} ${c}`);
+
+
+    </script>
+</body>
+</html>

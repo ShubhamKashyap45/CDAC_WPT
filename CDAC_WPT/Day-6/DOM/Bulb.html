@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        img{
+            height: 30%;
+            width: 30%;
+        }
+        .btn{
+          font-size: large;
+          background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <div >
+    <h1>Bulb ON | OFF</h1>
+     
+    <img id="img" style="background-color: black;" src="https://th.bing.com/th/id/OIP.maWRvjA73l5CT719MqvdSAHaHk?rs=1&pid=ImgDetMain" alt="" srcset=""> <br>
+    <input type="button" value="On" id="on" class="btn">    
+    <input type="button" value="Off" id="off" class="btn">    
+</div>
+
+<script>
+    let img = document.getElementById("img");
+    let on= document.getElementById("on");
+    let off= document.getElementById("off");
+
+    on.onclick=function(){
+        img.src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940186lbyqngqg1y.png"
+        document.body.style.background="white"
+    }
+    off.onclick=function(){
+        img.src="https://th.bing.com/th/id/OIP.maWRvjA73l5CT719MqvdSAHaHk?rs=1&pid=ImgDetMain"
+        document.body.style.background="black";
+        
+    
+   }
+</script>
+
+</body>
+</html>
